@@ -66,6 +66,7 @@ public class AgentBrain : MonoBehaviour
         float adjustedSpeed = Mathf.Lerp(minSpeed, manager.movementSettings.maxSpeed, alignment);
 
         // Apply steering and update velocity
+        steering *= Time.deltaTime;
         velocity = Vector3.ClampMagnitude(velocity + steering, adjustedSpeed);
 
         velocity.y = 0;
