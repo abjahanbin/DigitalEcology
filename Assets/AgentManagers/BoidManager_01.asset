@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: BoidManager_01
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
-    maxSpeed: 70.6
-    maxForce: 2
+    maxSpeed: 40.4
+    maxForce: 1.464
     minSpeedFactor: 1
   stretchVisualSettings:
-    stretchMultiplier: 4.28
+    stretchMultiplier: 3.95
     stretchSpeed: 31.5
-    stretchSensitivity: 6.7
+    stretchSensitivity: 5.87
   containmentSettings:
-    weight: 100
+    weight: 10
     margin: 0.1
   obstacleAvoidanceSettings:
     weight: 8.24
