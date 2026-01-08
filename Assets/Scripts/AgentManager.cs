@@ -3,7 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public class MovementSettings
 {
-    [Range(0.1f, 50f)] public float maxSpeed = 10f;
+    [Range(0.1f, 100f)] public float maxSpeed = 10f;
     [Range(0.1f, 2f)] public float maxForce = 0.1f;
     [Range(0f, 1f)] public float minSpeedFactor = 0.5f;
 }
