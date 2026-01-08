@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dfabcfa29f8f1347b51b69ccdf6e61b, type: 3}
+  m_Name: BoidManager_01
+  m_EditorClassIdentifier: Assembly-CSharp::AgentManager
+  movementSettings:
+    maxSpeed: 50
+    maxForce: 0.1
+    minSpeedFactor: 0.414
+  stretchVisualSettings:
+    stretchMultiplier: 3.15
+    stretchSpeed: 31.5
+    stretchSensitivity: 6.7
+  containmentSettings:
+    weight: 10
+    margin: 0.1
+  obstacleAvoidanceSettings:
+    weight: 8.24
+    feelerLength: 6.48
+    obstacleMask:
+      serializedVersion: 2
+      m_Bits: 8
+  wanderSettings:
+    weight: 1
+    circleDistance: 2
+    circleRadius: 1
+    jitter: 0.5
+  alignSettings:
+    weight: 5.38
+    neighborRadius: 34.6
+  cohesionSettings:
+    weight: 4.14
+    neighborRadius: 39
+  separationSettings:
+    weight: 5.13
+    radius: 19.8
+  avoidSettings:
+    weight: 1
+    radius: 2
+  attractSettings:
+    weight: 1
+    radius: 2
+  fleeSettings:
+    weight: 1
+    fleeRadius: 10
+    fleeLayer:
+      serializedVersion: 2
+      m_Bits: 0
+  seekSettings:
+    weight: 4.58
+    seekRadius: 37.2
+    seekLayer:
+      serializedVersion: 2
+      m_Bits: 64
+  idleSettings:
+    weight: 1
+    restChance: 0.005
+    restDuration: 2
