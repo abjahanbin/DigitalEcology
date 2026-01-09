@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AgentSpawner : MonoBehaviour
@@ -74,6 +75,37 @@ public class AgentSpawner : MonoBehaviour
         {
             SpawnSingleAgent();
             yield return new WaitForSeconds(spawnInterval);
+        }
+    }
+
+    public void RespawnAgents()
+    {
+        // Delete old agents if they were parented
+        if (parentToSpawner)
+        {
+            var children = new List<GameObject>();
+            foreach (Transform child in transform)
+            {
+                children.Add(child.gameObject);
+            }
+
+            foreach (GameObject go in children)
+            {
+                DestroyImmediate(go);
+            }
+        }
+
+        // Spawn based on current setting
+        if (spawnOnStart)
+        {
+            for (int i = 0; i < agentCount; i++)
+            {
+                SpawnSingleAgent();
+            }
+        }
+        else
+        {
+            StartCoroutine(SpawnAgentsOverTime());
         }
     }
 }
