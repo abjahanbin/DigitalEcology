@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: FleeManager_01
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
-    maxSpeed: 35.6
-    maxForce: 0.142
+    maxSpeed: 43.6
+    maxForce: 0.35
     minSpeedFactor: 0.769
   stretchVisualSettings:
     stretchMultiplier: 2
     stretchSpeed: 10
+    stretchSensitivity: 1
   containmentSettings:
     weight: 10
     margin: 0.1
@@ -45,6 +46,9 @@ MonoBehaviour:
   avoidSettings:
     weight: 1
     radius: 2
+  attractSettings:
+    weight: 1
+    radius: 2
   fleeSettings:
     weight: 6.48
     fleeRadius: 67.4
@@ -57,3 +61,7 @@ MonoBehaviour:
     seekLayer:
       serializedVersion: 2
       m_Bits: 64
+  idleSettings:
+    weight: 1
+    restChance: 0.005
+    restDuration: 2

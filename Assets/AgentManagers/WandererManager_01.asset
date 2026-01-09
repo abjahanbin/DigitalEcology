@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WandererManager_01
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
-    maxSpeed: 50
+    maxSpeed: 33.2
     maxForce: 0.17
     minSpeedFactor: 0.711
   stretchVisualSettings:

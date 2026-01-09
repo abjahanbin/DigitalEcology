@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentSpawner
   agentPrefab: {fileID: 3625707327563200226, guid: 9f2845f6aec6d8c4ea4c2ba5c6cadca8, type: 3}
-  agentCount: 10
+  agentCount: 80
   spawnRadius: 50
   randomizeRotation: 1
   randomizeScale: 1
@@ -187,7 +187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &337197623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentSpawner
   agentPrefab: {fileID: 7803713332639988273, guid: 05e0b5c6bf7798947a8032b04cb6c0c0, type: 3}
-  agentCount: 60
+  agentCount: 15
   spawnRadius: 50
   randomizeRotation: 1
   randomizeScale: 1
@@ -239,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &455925585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,13 +253,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentSpawner
   agentPrefab: {fileID: 7803713332639988273, guid: bbd7da01d5029c745b5f34f6cc4295aa, type: 3}
-  agentCount: 50
+  agentCount: 40
   spawnRadius: 30
   randomizeRotation: 1
   randomizeScale: 1
   maxScaleMultiplier: 1.5
   spawnOnStart: 0
-  spawnInterval: 0.5
+  spawnInterval: 1.45
 --- !u!4 &455925586
 Transform:
   m_ObjectHideFlags: 0
@@ -467,7 +467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &733782474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,8 +481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentSpawner
   agentPrefab: {fileID: 7803713332639988273, guid: ee7962f756a0f934fa1300a701790589, type: 3}
-  agentCount: 50
-  spawnRadius: 30
+  agentCount: 20
+  spawnRadius: 50
   randomizeRotation: 1
   randomizeScale: 1
   maxScaleMultiplier: 1.5
