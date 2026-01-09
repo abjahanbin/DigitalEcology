@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentSpawner
   agentPrefab: {fileID: 3625707327563200226, guid: 9f2845f6aec6d8c4ea4c2ba5c6cadca8, type: 3}
-  agentCount: 80
+  agentCount: 100
   spawnRadius: 50
   randomizeRotation: 1
   randomizeScale: 1
