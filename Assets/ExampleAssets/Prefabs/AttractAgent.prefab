@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 589082662398385736}
   - component: {fileID: 7777817190888588705}
   - component: {fileID: 2929981178204558232}
-  - component: {fileID: 8373255877917241009}
-  - component: {fileID: 4845937209026905342}
-  m_Layer: 6
-  m_Name: WanderAgent
+  - component: {fileID: -3629721120040110394}
+  m_Layer: 0
+  m_Name: AttractAgent
   m_TagString: Agent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70e8ef9a5af1fe04595a1e70ef380a27, type: 2}
+  - {fileID: 2100000, guid: 83f10c8b20b1d6a40af39f129597136b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,10 +126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e75e591002c5bd4fbfb405090364ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentBrain
-  manager: {fileID: 11400000, guid: 55823ce82ec20b94baafc85b607d1b1e, type: 2}
+  manager: {fileID: 11400000, guid: aba47940e6590564fb24aea4a890ae28, type: 2}
   maxSpeed: 20
   maxForce: 20
---- !u!114 &8373255877917241009
+--- !u!114 &-3629721120040110394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,25 +138,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7803713332639988273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3fe4a6bdbb99f6489891c1f22ec6de1, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f7c4ffd17f37b4297a452bc56838c3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WanderBehavior
+  m_EditorClassIdentifier: Assembly-CSharp::AttractBehavior
+  behaviorMaterial: {fileID: 0}
   showDebugLines: 1
-  lineColor: {r: 0, g: 0.8549175, b: 1, a: 1}
+  lineColor: {r: 1, g: 0, b: 1, a: 1}
   lineLength: 10
   segments: 16
---- !u!114 &4845937209026905342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803713332639988273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efef986b3d196704692c3313369503f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IdleBehavior
-  showDebugLines: 1
-  lineColor: {r: 1, g: 1, b: 1, a: 1}
-  lineLength: 10
