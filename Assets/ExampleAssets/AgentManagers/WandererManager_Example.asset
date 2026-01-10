@@ -10,58 +10,58 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dfabcfa29f8f1347b51b69ccdf6e61b, type: 3}
-  m_Name: AvoidManager_01
+  m_Name: WandererManager_Example
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
-    maxSpeed: 21.9
-    maxForce: 0.142
-    minSpeedFactor: 0.769
+    maxSpeed: 50
+    maxForce: 0.13
+    minSpeedFactor: 0.644
   stretchVisualSettings:
-    stretchMultiplier: 2.6
-    stretchSpeed: 10
-    stretchSensitivity: 4.92
+    stretchMultiplier: 2.06
+    stretchSpeed: 58.2
+    stretchSensitivity: 9.42
   containmentSettings:
     weight: 10
-    margin: 0.1
+    margin: 0.1103
   obstacleAvoidanceSettings:
-    weight: 8.24
-    feelerLength: 6.48
+    weight: 3.9
+    feelerLength: 5.62
     obstacleMask:
       serializedVersion: 2
       m_Bits: 8
   wanderSettings:
-    weight: 1
-    circleDistance: 18.5
-    circleRadius: 20.9
-    jitter: 0.5
+    weight: 0.79
+    circleDistance: 42.5
+    circleRadius: 10.3
+    jitter: 0.103
   alignSettings:
-    weight: 2.45
-    neighborRadius: 17.1
+    weight: 1
+    neighborRadius: 3
   cohesionSettings:
-    weight: 2.25
-    neighborRadius: 31.1
+    weight: 1
+    neighborRadius: 3
   separationSettings:
-    weight: 5.7
-    radius: 31.1
+    weight: 1
+    radius: 2
   avoidSettings:
-    weight: 7.58
-    radius: 40.5
+    weight: 1
+    radius: 2
   attractSettings:
     weight: 1
     radius: 2
   fleeSettings:
-    weight: 6.48
-    fleeRadius: 67.4
+    weight: 1
+    fleeRadius: 10
     fleeLayer:
       serializedVersion: 2
-      m_Bits: 128
+      m_Bits: 0
   seekSettings:
-    weight: 4.58
-    seekRadius: 37.2
+    weight: 1
+    seekRadius: 7.2
     seekLayer:
       serializedVersion: 2
-      m_Bits: 64
+      m_Bits: 0
   idleSettings:
-    weight: 1
-    restChance: 0.005
-    restDuration: 2
+    weight: 5.69
+    restChance: 0.0134
+    restDuration: 1.21

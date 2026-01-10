@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dfabcfa29f8f1347b51b69ccdf6e61b, type: 3}
-  m_Name: BoidManager_01
+  m_Name: BoidManager_Example
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
     maxSpeed: 40.4
@@ -35,14 +35,14 @@ MonoBehaviour:
     circleRadius: 1
     jitter: 0.5
   alignSettings:
-    weight: 5.38
+    weight: 5.94
     neighborRadius: 34.6
   cohesionSettings:
-    weight: 4.14
+    weight: 5.06
     neighborRadius: 39
   separationSettings:
-    weight: 5.13
-    radius: 19.8
+    weight: 5.65
+    radius: 31
   avoidSettings:
     weight: 1
     radius: 2

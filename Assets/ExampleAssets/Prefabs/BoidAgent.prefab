@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234fb272c32cb0740b739c9559fef600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlignBehavior
+  behaviorMaterial: {fileID: 2100000, guid: c62c8cb0db9358345826d9f2bba3525f, type: 2}
   showDebugLines: 1
   lineColor: {r: 0, g: 1, b: 0, a: 1}
   lineLength: 10
@@ -161,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df03679e68db27b4ebf466110028e47e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SeparationBehavior
+  behaviorMaterial: {fileID: 2100000, guid: c35c33ee6fa4520489067c0049110d38, type: 2}
   showDebugLines: 1
   lineColor: {r: 1, g: 0, b: 0, a: 1}
   lineLength: 50
@@ -177,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50cbf9417433a654d8eef3e989a9a0d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CohesionBehavior
+  behaviorMaterial: {fileID: 2100000, guid: 191978b16149b3746bd19af4ae202415, type: 2}
   showDebugLines: 1
   lineColor: {r: 0, g: 1, b: 1, a: 1}
   lineLength: 10
@@ -193,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f256b821067b9a447ad9a8f4be1c0e50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SeekBehavior
+  behaviorMaterial: {fileID: 2100000, guid: 83f10c8b20b1d6a40af39f129597136b, type: 2}
   showDebugLines: 1
   lineColor: {r: 1, g: 0, b: 1, a: 1}
   lineLength: 10
