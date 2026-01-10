@@ -170,9 +170,9 @@ public class AgentBrain : MonoBehaviour
 
     private void ApplyMaterial(Material mat)
     {
-        if (rend != null && rend.material != mat)
+        if (rend != null && rend.sharedMaterial != mat)
         {
-            rend.material = mat;
+            rend.sharedMaterial = mat;
         }
     }
 
