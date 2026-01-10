@@ -142,7 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3fe4a6bdbb99f6489891c1f22ec6de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WanderBehavior
-  behaviorMaterial: {fileID: 2100000, guid: 70e8ef9a5af1fe04595a1e70ef380a27, type: 2}
   showDebugLines: 1
   lineColor: {r: 0, g: 0.8549175, b: 1, a: 1}
   lineLength: 10
@@ -159,7 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efef986b3d196704692c3313369503f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IdleBehavior
-  behaviorMaterial: {fileID: 2100000, guid: d7133fdf0b051b74d9939746b00e0c92, type: 2}
   showDebugLines: 1
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   lineLength: 10

@@ -17,9 +17,6 @@ public class AgentBrain : MonoBehaviour
     private Vector3 previousVelocity;
     private Vector3 currentScale = Vector3.one;
 
-    private Material originalMaterial;
-    private Renderer rend;
-
 
     void Awake()
     {
@@ -41,28 +38,16 @@ public class AgentBrain : MonoBehaviour
         
         startingY = transform.position.y;
         originalScale = transform.localScale;
-
-        rend = GetComponentInChildren<Renderer>();
-        originalMaterial = rend.material;
     }
 
     void Update()
     {
         Vector3 steering = Vector3.zero;
         Vector3 containment = CalculateContainmentForce();
-        AgentBehavior dominantBehavior = null;
-        float maxForceMagnitude = 0f;
 
         foreach (var behavior in behaviors)
         {
-            Vector3 force = behavior.CalculateForce(this);
-            steering += force;
-
-            if (force.magnitude > maxForceMagnitude)
-            {
-                maxForceMagnitude = force.magnitude;
-                dominantBehavior = behavior;
-            }
+            steering += behavior.CalculateForce(this);
         }
 
         // Add obstacle avoidance
@@ -109,15 +94,6 @@ public class AgentBrain : MonoBehaviour
         transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * manager.stretchVisualSettings.stretchSpeed);
         
         previousVelocity = velocity;
-
-        if (dominantBehavior != null && dominantBehavior.behaviorMaterial != null)
-        {
-            ApplyMaterial(dominantBehavior.behaviorMaterial);
-        }
-        else
-        {
-            ApplyMaterial(originalMaterial); // fallback
-        }
 
     }
 
@@ -166,14 +142,6 @@ public class AgentBrain : MonoBehaviour
         else if (viewportPos.y > 1f - margin) force.z = -1;
 
         return force.normalized;
-    }
-
-    private void ApplyMaterial(Material mat)
-    {
-        if (rend != null && rend.sharedMaterial != mat)
-        {
-            rend.sharedMaterial = mat;
-        }
     }
 
 }

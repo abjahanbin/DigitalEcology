@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dfabcfa29f8f1347b51b69ccdf6e61b, type: 3}
-  m_Name: AvoidManager_Example
+  m_Name: FleeManager_01
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
-    maxSpeed: 21.9
-    maxForce: 0.142
+    maxSpeed: 43.6
+    maxForce: 0.35
     minSpeedFactor: 0.769
   stretchVisualSettings:
-    stretchMultiplier: 2.6
+    stretchMultiplier: 2
     stretchSpeed: 10
-    stretchSensitivity: 4.92
+    stretchSensitivity: 1
   containmentSettings:
     weight: 10
     margin: 0.1
@@ -31,8 +31,8 @@ MonoBehaviour:
       m_Bits: 8
   wanderSettings:
     weight: 1
-    circleDistance: 18.5
-    circleRadius: 20.9
+    circleDistance: 2
+    circleRadius: 1
     jitter: 0.5
   alignSettings:
     weight: 2.45
@@ -44,8 +44,8 @@ MonoBehaviour:
     weight: 5.7
     radius: 31.1
   avoidSettings:
-    weight: 7.58
-    radius: 40.5
+    weight: 1
+    radius: 2
   attractSettings:
     weight: 1
     radius: 2

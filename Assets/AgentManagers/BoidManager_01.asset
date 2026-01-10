@@ -10,45 +10,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dfabcfa29f8f1347b51b69ccdf6e61b, type: 3}
-  m_Name: AttractManager_Example
+  m_Name: BoidManager_01
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
-    maxSpeed: 31.4
-    maxForce: 0.273
-    minSpeedFactor: 0.52
+    maxSpeed: 40.4
+    maxForce: 1.464
+    minSpeedFactor: 1
   stretchVisualSettings:
-    stretchMultiplier: 2.38
-    stretchSpeed: 37.3
-    stretchSensitivity: 6.82
+    stretchMultiplier: 3.95
+    stretchSpeed: 31.5
+    stretchSensitivity: 5.87
   containmentSettings:
     weight: 10
     margin: 0.1
   obstacleAvoidanceSettings:
-    weight: 3.9
-    feelerLength: 5.62
+    weight: 8.24
+    feelerLength: 6.48
     obstacleMask:
       serializedVersion: 2
       m_Bits: 8
   wanderSettings:
-    weight: 2.16
-    circleDistance: 30.1
-    circleRadius: 6
-    jitter: 0.618
+    weight: 1
+    circleDistance: 2
+    circleRadius: 1
+    jitter: 0.5
   alignSettings:
-    weight: 1
-    neighborRadius: 3
+    weight: 5.38
+    neighborRadius: 34.6
   cohesionSettings:
-    weight: 1
-    neighborRadius: 3
+    weight: 4.14
+    neighborRadius: 39
   separationSettings:
-    weight: 1
-    radius: 2
+    weight: 5.13
+    radius: 19.8
   avoidSettings:
     weight: 1
     radius: 2
   attractSettings:
-    weight: 8.97
-    radius: 50
+    weight: 1
+    radius: 2
   fleeSettings:
     weight: 1
     fleeRadius: 10
@@ -56,12 +56,12 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 0
   seekSettings:
-    weight: 1
-    seekRadius: 7.2
+    weight: 4.58
+    seekRadius: 37.2
     seekLayer:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 64
   idleSettings:
-    weight: 4.58
-    restChance: 0.0033
-    restDuration: 1.21
+    weight: 1
+    restChance: 0.005
+    restDuration: 2

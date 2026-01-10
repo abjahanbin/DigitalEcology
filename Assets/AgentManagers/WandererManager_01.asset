@@ -10,39 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dfabcfa29f8f1347b51b69ccdf6e61b, type: 3}
-  m_Name: BoidManager_Example
+  m_Name: WandererManager_01
   m_EditorClassIdentifier: Assembly-CSharp::AgentManager
   movementSettings:
-    maxSpeed: 40.4
-    maxForce: 1.464
-    minSpeedFactor: 1
+    maxSpeed: 33.2
+    maxForce: 0.17
+    minSpeedFactor: 0.711
   stretchVisualSettings:
-    stretchMultiplier: 3.95
-    stretchSpeed: 31.5
-    stretchSensitivity: 5.87
+    stretchMultiplier: 5
+    stretchSpeed: 58.2
+    stretchSensitivity: 9.42
   containmentSettings:
     weight: 10
     margin: 0.1
   obstacleAvoidanceSettings:
-    weight: 8.24
-    feelerLength: 6.48
+    weight: 3.9
+    feelerLength: 5.62
     obstacleMask:
       serializedVersion: 2
       m_Bits: 8
   wanderSettings:
-    weight: 1
-    circleDistance: 2
-    circleRadius: 1
-    jitter: 0.5
+    weight: 2.16
+    circleDistance: 30.1
+    circleRadius: 6
+    jitter: 0.618
   alignSettings:
-    weight: 5.86
-    neighborRadius: 34.6
+    weight: 1
+    neighborRadius: 3
   cohesionSettings:
-    weight: 5.15
-    neighborRadius: 39
+    weight: 1
+    neighborRadius: 3
   separationSettings:
-    weight: 5.65
-    radius: 31
+    weight: 1
+    radius: 2
   avoidSettings:
     weight: 1
     radius: 2
@@ -56,12 +56,12 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 0
   seekSettings:
-    weight: 4.58
-    seekRadius: 37.2
+    weight: 1
+    seekRadius: 7.2
     seekLayer:
       serializedVersion: 2
-      m_Bits: 64
+      m_Bits: 0
   idleSettings:
-    weight: 1
-    restChance: 0.005
-    restDuration: 2
+    weight: 4.58
+    restChance: 0.0033
+    restDuration: 1.21

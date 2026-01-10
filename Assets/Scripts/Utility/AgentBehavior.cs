@@ -9,8 +9,5 @@ public abstract class AgentBehavior : MonoBehaviour
         this.manager = manager;
     }
 
-    [Header("Material Override")]
-    public Material behaviorMaterial;
-
     public abstract Vector3 CalculateForce(AgentBrain agent);
 }
